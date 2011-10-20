@@ -4,12 +4,13 @@ class FatherEngagement {
 	TrackedItem trackedItem
 	String psuId = '20000048'
 	String interviewerInitials
+	String interviewer
 	Date interviewStartTime
 	Date interviewEndTime
 	Date interviewDate
-	Boolean fatherPresent
-	Boolean discussNeedToKnow
-	Boolean signAsWitness
+	Boolean fatherPresent = false
+	Boolean discussNeedToKnow = false
+	Boolean signAsWitness = false
 	
     static constraints = {
     	trackedItem(unique:true)
@@ -17,6 +18,7 @@ class FatherEngagement {
     	interviewEndTime(nullable:true)
     	interviewDate(nullable:true)
     	interviewerInitials(nullable:true)
+    	interviewer(nullable:true)
     	fatherPresent(nullable:true)
     	discussNeedToKnow(nullable:true)
     	signAsWitness(nullable:true)
