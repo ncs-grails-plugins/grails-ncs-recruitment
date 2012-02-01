@@ -1,4 +1,4 @@
-<plugin name='ncs-recruitment' version='0.4' grailsVersion='1.3.5 &gt; *'>
+<plugin name='ncs-recruitment' version='1.0' grailsVersion='1.3.7 &gt; *'>
   <author>Aaron J. Zirbes</author>
   <authorEmail>ajz@umn.edu</authorEmail>
   <title>NCS Hi/Lo Recruitment Domain Classes</title>
@@ -7,6 +7,8 @@ Domain classes necessary for recruitment in Hi/Lo centers
 </description>
   <documentation>http://grails.org/plugin/ncs-recruitment</documentation>
   <resources>
+    <resource>BuildConfig</resource>
+    <resource>Config</resource>
     <resource>UrlMappings</resource>
     <resource>edu.umn.ncs.DwellingSegment</resource>
     <resource>edu.umn.ncs.FatherEngagement</resource>
@@ -19,8 +21,8 @@ Domain classes necessary for recruitment in Hi/Lo centers
     <resource>edu.umn.ncs.RecruitmentSegmentGroup</resource>
   </resources>
   <dependencies>
-    <plugin name='ncsTracking' version='0.3 &gt; *' />
-    <plugin name='ncsPeople' version='0.1 &gt; *' />
+    <plugin name='ncsTracking' version='3.2.2 &gt; *' />
+    <plugin name='ncsPeople' version='0.8 &gt; *' />
   </dependencies>
   <behavior />
 </plugin>

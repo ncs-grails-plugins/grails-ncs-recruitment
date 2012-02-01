@@ -2,7 +2,7 @@ package edu.umn.ncs
 
 class FatherEngagementStatus {
 	String suId
-	Integer fatherEngagement
+	Boolean fatherEngagement
 	Person mother
 
     static constraints = {
