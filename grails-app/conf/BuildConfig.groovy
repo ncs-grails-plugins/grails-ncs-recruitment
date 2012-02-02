@@ -35,3 +35,14 @@ grails.project.dependency.resolution = {
         // runtime 'mysql:mysql-connector-java:5.1.5'
     }
 }
+codenarc.reports = {
+	JenkinsXmlReport('xml') {
+		outputFile = 'target/test-reports/CodeNarcReport.xml'
+		title = 'CodeNarc Report for NCS Recruitment Plugin'
+	}
+	JenkinsHtmlReport('html') {
+		outputFile = 'CodeNarcReport.html'
+		title = 'CodeNarc Report for NCS Recruitment Plugin'
+	}
+}
+codenarc.propertiesFile = 'grails-app/conf/codenarc.properties'
